@@ -15,8 +15,8 @@
 //
 
 cc_library_static {
-    name: "libinit_sdm632",
+    name: "libinit_channel",
     recovery_available: true,
     shared_libs: ["libbase"],
-    srcs: ["init_sdm632.cpp"],
+    srcs: ["init_channel.cpp"],
 }
