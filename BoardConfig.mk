@@ -121,7 +121,6 @@ USE_CAMERA_STUB := true
 
 # Display
 USE_DEVICE_SPECIFIC_DISPLAY := true
-OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 DEVICE_SPECIFIC_DISPLAY_PATH := $(DEVICE_PATH)/qcom-caf/display
 TARGET_USES_ION := true
 TARGET_USES_HWC2 := true
