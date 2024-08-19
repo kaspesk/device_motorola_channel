@@ -118,6 +118,9 @@ debug.stagefright.omx_default_rank=0
 # LMKD/PSI
 ro.lmk.kill_heaviest_task=true
 
+# LowRam
+ro.config.low_ram=true
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
