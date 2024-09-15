@@ -210,6 +210,7 @@ BOARD_ROOT_EXTRA_FOLDERS := persist
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
