@@ -121,8 +121,13 @@ ro.lmk.kill_heaviest_task=true
 # LowRam
 ro.config.low_ram=true
 
+# PASR
+vendor.power.pasr.enabled=true
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.perf-hal.ver=2.2
+ro.vendor.perf.scroll_opt=true
 
 # Play store
 ro.com.google.clientidbase.am=android-motorola
