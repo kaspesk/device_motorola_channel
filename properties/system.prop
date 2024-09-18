@@ -15,3 +15,9 @@ persist.vendor.dpm.feature=0
 DEVICE_PROVISIONED=1
 ril.subscription.types=RUIM
 telephony.lteOnCdmaDevice=1
+
+# Play store
+ro.com.google.clientidbase.am=android-motorola
+ro.com.google.clientidbase.gmm=android-motorola
+ro.com.google.clientidbase.ms=android-motorola
+ro.com.google.clientidbase.yt=android-motorola
