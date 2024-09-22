@@ -21,7 +21,7 @@
          Note: This config is replacing the config_wifi_dual_band_support
          since more bands may now be supported (such as 6GHz), the naming dual_band
          is no longer indicative, and a separate config now exists for each band -->
-    <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
+    <bool translatable="false" name="config_wifi5ghzSupport">false</bool>
 
     <!-- Integer indicating maximum hardware supported client number of soft ap -->
     <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">32</integer>

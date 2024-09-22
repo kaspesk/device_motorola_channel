@@ -1,13 +1,16 @@
-#
-# props for sdm632
-#
-
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
     audio.deep_buffer.media=true \
     audio.offload.disable=false \
     audio.offload.video=false \
+    persist.vendor.audio.calfile0=/vendor/etc/acdbdata/common/Bluetooth_cal.acdb \
+    persist.vendor.audio.calfile1=/vendor/etc/acdbdata/common/General_cal.acdb \
+    persist.vendor.audio.calfile2=/vendor/etc/acdbdata/common/Global_cal.acdb \
+    persist.vendor.audio.calfile3=/vendor/etc/acdbdata/common/Handset_cal.acdb \
+    persist.vendor.audio.calfile4=/vendor/etc/acdbdata/common/Hdmi_cal.acdb \
+    persist.vendor.audio.calfile5=/vendor/etc/acdbdata/common/Headset_cal.acdb \
+    persist.vendor.audio.calfile6=/vendor/etc/acdbdata/common/Speaker_cal.acdb \
     persist.vendor.audio.dualmic.config=endfire \
     persist.vendor.audio.fluence.audiorec=false \
     persist.vendor.audio.fluence.speaker=false \
@@ -58,7 +61,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vidc.enc.dcvs.extra-buff-count=2 \
     persist.vendor.camera.preview.ubwc=0 \
     vendor.video.disable.ubwc=1 \
-    vendor.vidc.disable.split.mode=1
+    vendor.vidc.disable.split.mode=1 \
+    persist.vendor.camera.expose.aux=1
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -71,6 +75,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Color Mode
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=1
+
+# Cutout
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.support_hide_display_cutout=true
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -194,7 +202,24 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # SOC
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.soc.manufacturer=Qualcomm \
-    ro.soc.model=SDM450
+    ro.soc.model=SDM632
+
+# Sensors
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.sensors=channel \
+    ro.vendor.sensors.amd=false \
+    ro.vendor.sensors.facing=false \
+    ro.vendor.sensors.glance_approach=false \
+    ro.vendor.sensors.glance_cover_to_wake=false \
+    ro.vendor.sensors.mot_detect=true \
+    ro.vendor.sensors.mot_ltv=true \
+    ro.vendor.sensors.pedometer=false \
+    ro.vendor.sensors.pmd=false \
+    ro.vendor.sensors.rmd=false \
+    ro.vendor.sensors.scrn_ortn=false \
+    ro.vendor.sensors.smd=false \
+    ro.vendor.sensors.sta_detect=true \
+    ro.vendor.sdk.sensors.gestures=false
 
 # Skia
 # (b/183612348): Enable skia reduceOpsTaskSplitting

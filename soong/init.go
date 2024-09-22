@@ -1,4 +1,4 @@
-package sdm632
+package channel
 
 import (
     "android/soong/android"
