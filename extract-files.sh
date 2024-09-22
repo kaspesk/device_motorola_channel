@@ -68,6 +68,9 @@ function blob_fixup() {
                 "${PATCHELF}" --add-needed "libqsap_shim.so" "$LIBQSAP_SHIM"
             done
             ;;
+        vendor/lib/sensors.ssc.so|vendor/lib64/sensors.ssc.so)
+            "${PATCHELF}" --replace-needed libutils.so libutils-v31.so "${2}"
+            ;;
     esac
 }
 

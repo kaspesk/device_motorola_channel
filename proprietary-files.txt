@@ -950,12 +950,14 @@ vendor/lib/libsensor_reg.so
 vendor/lib/libsensor1.so
 vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.rp.so
-vendor/lib/sensors.ssc.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/libsensor1.so
 vendor/lib64/sensor_calibrate.so
 vendor/lib64/sensors.rp.so
-vendor/lib64/sensors.ssc.so
+
+# Sensors - from chef - QPTS30.61-18-16-16
+vendor/lib/sensors.ssc.so|f9afdc645f2b34cb25c8ee7bf165745a80e07a21
+vendor/lib64/sensors.ssc.so|2b8a1428dae979aa84eb52efa82861eb5af7add6
 
 # Thermal
 vendor/bin/thermal-engine

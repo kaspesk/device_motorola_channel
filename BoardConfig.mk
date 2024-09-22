@@ -184,6 +184,11 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Libutils-v32
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v31/arm/arch-arm-armv7-a-neon/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v31.so \
+    prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v31.so
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
 BOARD_FLASH_BLOCK_SIZE := 131072
