@@ -465,6 +465,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/usb/etc
 
+# UFFD
+PRODUCT_ENABLE_UFFD_GC := false
+
 # Vibrator
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
